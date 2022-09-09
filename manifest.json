@@ -1,0 +1,31 @@
+{
+	"manifest_version": 2,
+	"name": "youtube-timestamps",
+	"description": "description",
+	"version": "1.0.0",
+	"icons": {
+		"64": "icons/icon.png"
+	},
+	"background": {
+		"scripts": ["background-script.js"]
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"*://*.youtube.com/*"
+			],
+			"js": [
+				"content_script.js"
+			]
+		}
+	],
+	"sidebar_action": {
+		"default_title": "Timestamps",
+		"default_panel": "sidebar/sidebar.html",
+		"open_at_install": true
+	},
+	"permissions": [
+		"tabs",
+		"storage"
+	]
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+        <link rel="stylesheet" href="sidebar.css">
+        <script src="sidebar.js" defer></script>
+    </head>
+    <body>
+        <div id="editTimestamp_view" class="hide">
+            <button id="editTimestamp_backButton">back</button>
+            <input type="hidden" id="editTimestamp_timeInSeconds" value=""/>
+            <div id="editTimestamp_header">
+                <a href="#" class="time" id="editTimestamp_time">13:18</a>
+                <a id="editTimestamp_delete">Delete</a>
+            </div>
+            <textarea id="editTimestamp_textarea" rows="25">Fruit yielding their sea void form two after light lesser for. Our fowl open saw won't moving and lesser all land night dry sea. Seasons saw in third which brought morning hath darkness multiply replenish every hath fowl him greater. Given tree i he, rule grass darkness. Air female given Lights of also fowl heaven open may moving. Fourth saw.
+            </textarea>
+        </div>
+
+        <div id="timestamps_view">
+            <button id="new_button">New</button>
+            <div id="timestamps">
+                <!--
+                <div class="card timestamp">
+                    <a href="#" class="time">3:27</a>
+                    <p>Note preview here...</p>
+                </div>
+                --->
+            </div>
+        </div>
+
+        <div id="createTimestamp_view" class="hide">
+            <button id="createTimestamp_backButton">back</button>
+            <p id="error_message" class="hide">Please enter a valid timestamp.</p>
+            <div class="time_input">
+                <input id='h' name='h' type='number' value="0" min='0' max='24' placeholder="hr">
+                <input id='m' name='m' type='number' value="0" min='0' max='59' placeholder="min">
+                <input id='s' name='s' type='number' value="0" min='0' max='59' placeholder="sec">
+            </div>
+            <textarea id="createTimestamp_textarea" rows="15" placeholder="new note here..."></textarea>
+            <button id="save_button">Save</button>
+        </div>
+    </body>
+</html>

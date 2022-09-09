@@ -1,0 +1,42 @@
+body {
+    margin: 15px;
+}
+
+.timestamp {
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.hide {
+    display: none;
+}
+
+.back_button {
+    margin-bottom: 15px;
+}
+
+.time_input {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 15px;
+}
+
+#new_button,
+#editNote_backButton,
+#newTimestamp_backButton,
+#createTimestamp_backButton,
+#createTimestamp_textarea {
+    margin-bottom: 15px;
+}
+
+.time:hover,
+#editTimestamp_delete:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#editTimestamp_header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
