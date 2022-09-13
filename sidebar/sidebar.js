@@ -318,7 +318,7 @@ const formatTime = (timeInSeconds) => {
 }
 
 const isYoutubeVideo = (url) => {
-    return url.includes("youtube");
+    return url.includes("youtube.com/watch?v=");
 }
 
 const getVideoID = (url) => {
