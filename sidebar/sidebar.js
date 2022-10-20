@@ -315,7 +315,7 @@ const formatTime = (timeInSeconds) => {
 
     remainingSeconds = remainingSeconds % 60;
 
-    return `${ hours < 10? "0" + hours : hours}:${ minutes < 10? "0" + minutes : minutes}:${remainingSeconds<10? "0" + remainingSeconds: remainingSeconds}`;
+    return `${ hours == 0? "" : hours < 10? "0" + hours + ":" : hours + ":"}${ minutes < 10? "0" + minutes : minutes}:${remainingSeconds<10? "0" + remainingSeconds: remainingSeconds}`;
 }
 
 const isYoutubeVideo = (url) => {
