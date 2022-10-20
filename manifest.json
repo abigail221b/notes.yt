@@ -20,7 +20,7 @@
 		}
 	],
 	"sidebar_action": {
-		"default_title": "Timestamps",
+		"default_title": "notes.yt",
 		"default_panel": "sidebar/sidebar.html",
 		"open_at_install": true
 	},
