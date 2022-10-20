@@ -1,5 +1,11 @@
 # notes.yt
-A Firefox sidebar extension that lets you view, create and edit timestamped notes on a youtube video
+
+A Firefox sidebar extension that lets you view, create and edit timestamped notes on youtube videos
+
+## Screenshots
+![edit](notesyt_edit.png)
+![new](notesyt_new.png)
+![full](notesyt_full.png)
 
 ## Try it
 1. Download and unzip project
