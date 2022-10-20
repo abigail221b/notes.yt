@@ -40,3 +40,9 @@ body {
     justify-content: space-between;
     margin-top: 15px;
 }
+
+.note_preview {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

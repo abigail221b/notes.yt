@@ -198,7 +198,8 @@ const showTimestampList = () => {
                 });
     
                 let note_preview = document.createElement("p");
-                note_preview.innerHTML = timestamp.note.substring(0, 55) + "...";
+                note_preview.classList.add("note_preview");
+                note_preview.innerHTML = timestamp.note;
     
                 card_timestamp.appendChild(time);
                 card_timestamp.appendChild(note_preview);
