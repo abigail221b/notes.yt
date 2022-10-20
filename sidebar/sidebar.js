@@ -152,11 +152,15 @@ save_button.addEventListener("click", () => {
         return timestamps[videoID];
     })
     .then(timestamps => {
+        let position = timestamps.findIndex(timestamp => timestamp.time > seconds);
+
+        if(position === -1)
+            timestamps = [...timestamps, { time: seconds, note: note }];
+        else
+            timestamps.splice(position, 0, { time: seconds, note: note})
+
         browser.storage.local.set({
-            [videoID]: [...timestamps, {
-                time: seconds,
-                note: note
-            }]
+            [videoID]: timestamps
         })
         .then(() => {
             hideNewTimestampForm();
