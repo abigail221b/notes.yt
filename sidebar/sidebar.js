@@ -299,14 +299,14 @@ const clearSidebar = () => {
 }
 
 /**
- * Send current tab and time to background script
- * The background script will relay the info to the content script
- * The concent script will then set the yt video player at the given time
+ * Send the time to the content script of the active tab
  */
 const playVideoAtTimestamp = (time) => {
     browser.tabs.query({ active: true, currentWindow: true }).then(tabs => {
-        let tab = tabs[0];
-        browser.runtime.sendMessage({ tabId: tab.id, time: time });
+        let activeTab = tabs[0];
+        let activeTabId = activeTab.id;
+        
+        browser.tabs.sendMessage(activeTabId, { time: time });
     });
 }
 
